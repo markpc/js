@@ -1,0 +1,26 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "javascript playground files",
+  "main": "random.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markpc/js.git"
+  },
+  "keywords": [
+    "training"
+  ],
+  "author": "Mark Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markpc/js/issues"
+  },
+  "homepage": "https://github.com/markpc/js#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2"
+  }
+}
