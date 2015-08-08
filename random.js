@@ -1,8 +1,26 @@
-var input1 = prompt("please enter your number"); // Takes user input with the prompt command
-var topNumber = parseInt(input1);	//Parses the number from user to an interteger
-var randomNumber = Math.floor(Math.random() * topNumber) + 1; // Math.floor drops number to lowest near interger.
-// +1 makes sure the lowest number is 1
 
-//declare output message variable
-var message = "<p>" + randomNumber + "  is a number between 1 and " + topNumber + ."</p>";
-document.write(message);
+var randomNumber = Math.floor(Math.random() * 6 ) +1;
+var guess = prompt("Pick a number between one and six");
+
+var correctImg = document.createElement('img');
+correctImg.setAttribute('src','img/ghost.png');
+
+var incorrectImg = document.createElement('img');
+incorrectImg.setAttribute('src','img/incorrect.png');
+
+
+if (parseInt(guess) === randomNumber)	{
+	
+  	document.write('<p>Good guess! :)</p> <br>');
+  	document.querySelector('p').appendChild(correctImg);
+}
+else {
+	
+  	document.write('<p>Nope, wrong number. The number was ' + randomNumber + '<br>');
+  	document.querySelector('p').appendChild(incorrectImg);
+}
+
+
+//var myImage = document.createElement('img');
+//myImage.setAttribute('src','https://farm4.staticflickr.com/3455/3372925208_e1f2aae4e3_b.jpg');
+//document.querySelector('h1').appendChild(myImage);
